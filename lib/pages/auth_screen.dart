@@ -1,5 +1,5 @@
 import 'package:chat_app/components/auth_form.dart';
-import 'package:chat_app/models/auth_form_data.dart';
+import 'package:chat_app/core/models/auth_form_data.dart';
 import 'package:flutter/material.dart';
 
 class AuthScreen extends StatefulWidget {
@@ -12,9 +12,20 @@ class AuthScreen extends StatefulWidget {
 class _AuthScreenState extends State<AuthScreen> {
   bool _isLoading = false;
 
-  void _handleSubmit(AuthFormData formData) {
-    setState(() => _isLoading = true);
-    // setState(() => _isLoading = false);
+  Future<void> _handleSubmit(AuthFormData formData) async {
+    try {
+      setState(() => _isLoading = true);
+
+      if(formData.isLogin){
+
+      }else{
+        
+      }
+    } catch (e) {
+      // tratar erro!
+    } finally {
+      setState(() => _isLoading = false);
+    }
   }
 
   @override
