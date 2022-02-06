@@ -1,5 +1,6 @@
 import 'package:chat_app/components/auth_form.dart';
 import 'package:chat_app/core/models/auth_form_data.dart';
+import 'package:chat_app/core/services/auth/auth_mock_service.dart';
 import 'package:flutter/material.dart';
 
 class AuthScreen extends StatefulWidget {
@@ -16,10 +17,18 @@ class _AuthScreenState extends State<AuthScreen> {
     try {
       setState(() => _isLoading = true);
 
-      if(formData.isLogin){
-
-      }else{
-        
+      if (formData.isLogin) {
+        await AuthMockService().login(
+          formData.email,
+          formData.password,
+        );
+      } else {
+        await AuthMockService().signup(
+          formData.name,
+          formData.email,
+          formData.password,
+          formData.image,
+        );
       }
     } catch (e) {
       // tratar erro!
