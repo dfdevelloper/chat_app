@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "929609271199",
+    "project_id": "chat-app-722c5",
+    "storage_bucket": "chat-app-722c5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:929609271199:android:1f5089d4e3a30cd6d21faa",
+        "android_client_info": {
+          "package_name": "br.com.fidel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "929609271199-pbv60a172nhga589o8431hpuqlfjlevr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6A7rFaiPom7OV8I-5YHDiT7QEh1QaNMU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "929609271199-pbv60a172nhga589o8431hpuqlfjlevr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
